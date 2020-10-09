@@ -58,7 +58,7 @@ router.post('/register', function (req, res) {
 
 
 
-//get current logged user data
+//get current logged user dataa
 router.get('/me', function(req, res) {
     var token = req.headers['x-access-token'];
     if (!token) return res.status(401).send({ auth: false, message: 'No token provided.' });
