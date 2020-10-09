@@ -13,7 +13,7 @@ router.use(bodyParser.json());
 
 
 
-//Register users\
+//Register user
 router.post('/register', function (req, res) {
 
     var hashedPassword = bcrypt.hashSync(req.body.password, 8);
